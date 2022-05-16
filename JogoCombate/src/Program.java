@@ -15,6 +15,11 @@ public class Program {
 		c2.attack = 10;
 		c2.armor = 2;
 		
+		c1.takeDamage(c2);
+		c2.takeDamage(c1);
+		
+		System.out.println("Thor após tomar ataque da Meduza: "+ c1.life);
+		System.out.println("Meduza após tomar ataque do Thor: "+ c2.life);
 		
 	}
 
